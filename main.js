@@ -65,5 +65,6 @@ while(seleccion != "no"){
     }
 }
 
+
 const total = carrito.reduce((acc, el) => acc + el.precio * el.unidades, 0)
 console.log(`El total a pagar por su compra es: ${total}`)
