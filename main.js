@@ -1,9 +1,9 @@
 const productos = [
-    {nombre: "harina", precio: 50},
-    {nombre: "pan", precio: 10},
-    {nombre: "huevos", precio: 30},
-    {nombre: "leche", precio: 20},
-    {nombre: "azucar", precio: 40},
+    {nombre: "playstation", precio: 20},
+    {nombre: "steam", precio: 20},
+    {nombre: "xbox", precio: 20},
+    {nombre: "amazon", precio: 40},
+    {nombre: "google", precio: 30},
 ];
 let carrito = []
 
@@ -26,22 +26,22 @@ while(seleccion != "no"){
     let producto = prompt("Agrega un producto a tu carrito")
     let precio = 0
 
-    if(producto == "harina" || producto == "pan" || producto == "huevos" || producto == "leche" || producto == "azucar"){
+    if(producto == "playstation" || producto == "steam" || producto == "xbox" || producto == "amazon" || producto == "google"){
         switch(producto){
-            case "harina":
-                precio = 50;
-                break;
-            case "pan":
-                precio = 10;
-                break;
-            case "huevos":
-                precio = 30;
-                break;
-            case "leche":
+            case "playstation":
                 precio = 20;
                 break;
-            case "azucar":
+            case "steam":
+                precio = 20;
+                break;
+            case "xbox":
+                precio = 20;
+                break;
+            case "amazon":
                 precio = 40;
+                break;
+            case "google":
+                precio = 30;
                 break;
         default:
             break;
